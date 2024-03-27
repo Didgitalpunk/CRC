@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html xml:lang="fr" lang="fr"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" type="image/x-icon" href="https://phymuse.univ-lille.fr/favicon.ico">
+		<title>Phymuse, Musée de la physique - 6.4. 7 Générateur TBF CRC GB 64</title>
+
+		<meta name="description" content="Le musée de la physique">
+		
+		<!-- Fonts -->
+		<link href="Phymuse,%20Mus%C3%A9e%20de%20la%20physique%20-%206.4.%207%20G%C3%A9n%C3%A9rateur%20TBF%20CRC%20GB%2064_files/css.css" rel="stylesheet">
+		
+		<!-- CSS -->
+					<link rel="stylesheet" href="Phymuse,%20Mus%C3%A9e%20de%20la%20physique%20-%206.4.%207%20G%C3%A9n%C3%A9rateur%20TBF%20CRC%20GB%2064_files/db123f9.css" type="text/css">
+			
+		<!-- Favico -->
+		<link rel="apple-touch-icon" sizes="180x180" href="https://phymuse.univ-lille.fr/favico/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="https://phymuse.univ-lille.fr/favico/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="https://phymuse.univ-lille.fr/favico/favicon-16x16.png">
+		<link rel="manifest" href="https://phymuse.univ-lille.fr/favico/site.webmanifest">
+		<link rel="mask-icon" href="https://phymuse.univ-lille.fr/favico/safari-pinned-tab.svg" color="#5bbad5">
+		<link rel="shortcut icon" href="https://phymuse.univ-lille.fr/favico/favicon.ico">
+		<meta name="msapplication-TileColor" content="#2b5797">
+		<meta name="msapplication-config" content="/favico/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
+	<link id="avast_os_ext_custom_font" href="Phymuse,%20Mus%C3%A9e%20de%20la%20physique%20-%206.4.%207%20G%C3%A9n%C3%A9rateur%20TBF%20CRC%20GB%2064_files/fonts.css" rel="stylesheet" type="text/css"><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1px; bottom: 2px; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style></head>
+	
+	<body><div id="MathJax_Message" style="display: none;"></div>
+		<div class="wrapper">
+			<header id="header">
+				<!-- Bannière complète / Desktop -->
+				<div class="banner-desktop">
+					<a href="https://phymuse.univ-lille.fr/" title="Accueil"><img src="Phymuse,%20Mus%C3%A9e%20de%20la%20physique%20-%206.4.%207%20G%C3%A9n%C3%A9rateur%20TBF%20CRC%20GB%2064_files/logo.svg" class="logo svg" alt="Logo Phymuse"><h1>Musée de physique</h1></a>
+				<!-- Menu Complet / Desktop -->
+
+					<nav id="navigation" role="navigation" class="menucomplet">
+						<ul class="mainmenu">
+							<!-- Aria hidden = true permet d'afficher l'icône sauf pour les lecteurs par souci d'accessibilité -->
+							<li><a href="https://phymuse.univ-lille.fr/instruments" title="Instruments"><div class="mainmenuitem"><img src="Phymuse,%20Mus%C3%A9e%20de%20la%20physique%20-%206.4.%207%20G%C3%A9n%C3%A9rateur%20TBF%20CRC%20GB%2064_files/physics.svg" class="svg" aria-hidden="true"><span class="navtexte">Instruments</span></div></a></li>
+							<li>
+								<div class="recherche"><form role="search" action="/" method="post">
+									<input type="search" id="recherche" name="search" placeholder="Rechercher sur le site…" aria-label="Rechercher parmi le contenu du site">
+									<button type="submit"><span class="icon-search"></span></button>
+							  </form></div>
+							</li>
+						</ul>
+					</nav>
+				</div>
+
+				<!-- Bannière small / Mobile -->
+				<div class="banner-mobile">
+					<a href="https://phymuse.univ-lille.fr/" title="Accueil"><img src="Phymuse,%20Mus%C3%A9e%20de%20la%20physique%20-%206.4.%207%20G%C3%A9n%C3%A9rateur%20TBF%20CRC%20GB%2064_files/logo.svg" class="logo svg" alt="Logo Phymuse"></a>				</div>
+
+				<!-- Menu Hamburger / Mobile -->
+				<nav id="navigation" role="navigation" class="menumobile">
+					<button id="hamburger" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="menu">
+						<div id="nav-icon1" tabindex="-1"><span></span><span></span><span></span></div>
+					</button>
+					<ul id="menu-hamburger">
+						<li><a href="https://phymuse.univ-lille.fr/instruments" title="Instruments"><div class="mainmenuitem"><img src="Phymuse,%20Mus%C3%A9e%20de%20la%20physique%20-%206.4.%207%20G%C3%A9n%C3%A9rateur%20TBF%20CRC%20GB%2064_files/physics.svg" class="svg" aria-hidden="true"><span class="navtexte">Instruments</span></div></a></li>
+						<!-- La recherche doit apparaître ici en cas de navigation mobile -->
+						<li>
+							<div class="recherche">
+								<form role="search" action="/" method="post">
+									<input type="search" id="recherche" name="search" placeholder="Rechercher sur le site…" aria-label="Rechercher parmi le contenu du site">
+									<button type="submit"><span class="icon-search"></span></button>
+								</form>
+							</div>
+						</li>
+					</ul>
+				</nav>
+				<!-- Fin menu Hamburger -->
+
+				<!-- Menu langue -->
+				<form method="post" action="/setlanguage" id="changelanguage">
+					<input type="hidden" name="language" value="en">
+					<input type="hidden" name="redir" value="/instrument/6-4-7-generateur-tbf-crc-gb-64">
+					<button type="submit" title="Translate in english"><img src="Phymuse,%20Mus%C3%A9e%20de%20la%20physique%20-%206.4.%207%20G%C3%A9n%C3%A9rateur%20TBF%20CRC%20GB%2064_files/world.svg">
+						<span class="navtexte">Eng</span>
+					</button>
+				</form>
+				<!-- Fin menu langue -->
+
+			</header>
+
+					<main id="main" role="main">
+		<section class="main">
+			<h3>
+				6.4. 7 Générateur TBF CRC GB 64
+				<button class="btn btn-link" id="btnprint" title="Imprimer la page"><span class="glyphicon glyphicon-print"></span></button>
+			</h3>
+			<div class="taxonomy">
+							<span class="icon-chevron-right"></span><span class="icon-chevron-right second"></span>				<a href="https://phymuse.univ-lille.fr/categorie/6-electronique">6. Electronique</a> 
+				 <span class="icon-chevron-right"></span> 											<a href="https://phymuse.univ-lille.fr/categorie/6-4-alimentations-generateurs">6.4 Alimentations. Générateurs</a> 
+										</div>
+			
+			<div id="phymedias">
+								
+											<div class="media-viewer" style="display: block;"><iframe src="" style="display: none;"></iframe><div class="img" style="background-image: url(&quot;/uploads/medias/2018/09/12/generateur_tbf_crc_gb_64_1152441.jpeg&quot;); background-repeat: no-repeat; background-color: rgb(0, 0, 0); background-size: 533.333px 400px; background-position: 341.333px 0px;" data-src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACWCAYAAABkW7XSAAAAxUlEQVR4nO3BMQEAAADCoPVPbQhfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOA1v9QAATX68/0AAAAASUVORK5CYII="><div class="controlbar"><div class="num"><span>1</span> / 1</div><button class="prev" title="Previous image"><span class="glyphicon glyphicon-chevron-left"></span></button><button class="zoomin zoominout" title="Zoom in"><span class="icon-search-plus"></span></button><button class="zoomout zoominout" title="Zoom out"><span class="icon-search-minus"></span></button><a class="fullscreen" title="Open in fullscreen" target="_blank" href="https://phymuse.univ-lille.fr/instrument/6-4-7-generateur-tbf-crc-gb-64/embed/G%C3%A9n%C3%A9rateur%20TBF%20CRC%20GB%2064_1"><span class="glyphicon glyphicon-fullscreen"></span></a><button class="next" title="Next image"><span class="glyphicon glyphicon-chevron-right"></span></button></div></div><div class="gallery-wrapper"><button class="prev" title="Previous image"><span class="glyphicon glyphicon-chevron-left"></span></button><button class="next" title="Next image"><span class="glyphicon glyphicon-chevron-right"></span></button><div class="gallery"><ul style="width: 73px;"><li class="active"><a href="#"><img class="img-responsive active" alt="Générateur TBF CRC GB 64_1" src="Phymuse,%20Mus%C3%A9e%20de%20la%20physique%20-%206.4.%207%20G%C3%A9n%C3%A9rateur%20TBF%20CRC%20GB%2064_files/generateur_tbf_crc_gb_64_1152441.png" data-name="1"></a></li></ul></div></div></div></div>
+					
+			<section class="metadata infos">
+				<h4><span class="icon-commenting-o"></span>Description</h4>
+				
+				<p>          <b>          <span style="color:#ff0000;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CRC<br>&nbsp;&nbsp; 1950-55</span>        </b>          <br>          <br>Boîtier métallique vert.<br>&nbsp;&nbsp;&nbsp;&nbsp; Largeur : 38 cm<br>&nbsp;&nbsp;&nbsp;&nbsp; Hauteur : 27 cm<br>&nbsp;&nbsp;&nbsp;&nbsp; Profondeur : 28,5 cm<br>5 gammes de fréquences :<br>&nbsp;&nbsp;&nbsp;&nbsp; 0,005 à 0,05 Hz ; 0,05 à 0,5 Hz ; ... ; 50 à 500 Hz<br>En
+ même temps que la fréquence est indiquée la période en secondes. La 
+variation de la fréquence est obtenue par le grand disque gradué.<br>Formes d'ondes possibles : sinus, rectangle, dent de scie.<br>Commande du niveau de sortie : 0 à 10 V<br>Sortie à point milieu.<br>Synchronisation possible.<br><br>Inventaire : En 1.101<br><br></p>                <p>          <br>        </p>			</section>
+		</section>
+	</main>
+		</div>
+			
+		<div id="printcontent">		<div class="printtitle row">
+		<img class="qrcode" src="Phymuse,%20Mus%C3%A9e%20de%20la%20physique%20-%206.4.%207%20G%C3%A9n%C3%A9rateur%20TBF%20CRC%20GB%2064_files/6-4-7-generateur-tbf-crc-gb-64.png">
+		<h2 class="text-uppercase">6.4. 7 Générateur TBF CRC GB 64</h2>
+
+		<ol class="breadcrumb">			<li>6. Electronique</li>
+					<li>6.4 Alimentations. Générateurs</li>
+		</ol>
+
+	</div>
+		
+	<div class="printmedia row">
+		
+	</div>
+	
+	<div class="printinfos row">
+		<p>          <b>          <span style="color:#ff0000;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CRC<br>&nbsp;&nbsp; 1950-55</span>        </b>          <br>          <br>Boîtier métallique vert.<br>&nbsp;&nbsp;&nbsp;&nbsp; Largeur : 38 cm<br>&nbsp;&nbsp;&nbsp;&nbsp; Hauteur : 27 cm<br>&nbsp;&nbsp;&nbsp;&nbsp; Profondeur : 28,5 cm<br>5 gammes de fréquences :<br>&nbsp;&nbsp;&nbsp;&nbsp; 0,005 à 0,05 Hz ; 0,05 à 0,5 Hz ; ... ; 50 à 500 Hz<br>En
+ même temps que la fréquence est indiquée la période en secondes. La 
+variation de la fréquence est obtenue par le grand disque gradué.<br>Formes d'ondes possibles : sinus, rectangle, dent de scie.<br>Commande du niveau de sortie : 0 à 10 V<br>Sortie à point milieu.<br>Synchronisation possible.<br><br>Inventaire : En 1.101<br><br></p>                <p>          <br>        </p>	</div>
+</div>
+		
+		<footer role="contentinfo">
+			<!--<p class="aboutus">A propos</p>
+			<p class="footer-text-lg">© 2004-2021 Université de Lille Sciences et Technologies</p>
+			<p class="footer-text-sm">© 2018 Université de Lille</p>
+			<a href="http://physique.univ-lille1.fr/"><img src="/bundles/semmcore/img/udl.svg" alt="Logo Université de Lille"></a></div>-->
+			
+			<div><p class="aboutus"><a href="https://phymuse.univ-lille.fr/a-propos">A propos</a></p></div>
+			<div><p class="footer-text">
+				<span class="footer-text-lg">© 2004-2021 Université de Lille Sciences et Technologies</span>
+				<span class="footer-text-sm">© 2018<span class="footer-text-xs"> Université de Lille</span></span>
+			</p>
+			<a href="http://physique.univ-lille1.fr/"><img src="Phymuse,%20Mus%C3%A9e%20de%20la%20physique%20-%206.4.%207%20G%C3%A9n%C3%A9rateur%20TBF%20CRC%20GB%2064_files/udl.svg" alt="Logo Université de Lille"></a></div>
+		</footer>
+				<script type="text/javascript" src="Phymuse,%20Mus%C3%A9e%20de%20la%20physique%20-%206.4.%207%20G%C3%A9n%C3%A9rateur%20TBF%20CRC%20GB%2064_files/423bdb8.js"></script>
+				<script src="Phymuse,%20Mus%C3%A9e%20de%20la%20physique%20-%206.4.%207%20G%C3%A9n%C3%A9rateur%20TBF%20CRC%20GB%2064_files/MathJax.js"></script>
+	
+			<script type="text/javascript" src="Phymuse,%20Mus%C3%A9e%20de%20la%20physique%20-%206.4.%207%20G%C3%A9n%C3%A9rateur%20TBF%20CRC%20GB%2064_files/5ccbee0.js"></script>
+		<script type="text/javascript">
+		$(function(){			
+			$('#phymedias').wz();
+			$('.media-viewer .thumbnails img').click(function(e){
+				var img = $(e.currentTarget);
+				var attr = img.attr('data-src');
+				if(typeof attr !== 'undefined' && attr){
+					$('#printcontent .printmedia').html('<img src="'+ attr +'" class="img-responsive" alt="" />');
+				}
+			});
+		});
+	</script>
+	
+
+</body></html>
