@@ -1,0 +1,169 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	5700 5850 6300 5850
+$Comp
+L Connector:Conn_01x01_Female Jnoir?
+U 1 1 5F49C09C
+P 6500 5850
+AR Path="/5F3E11CE/5F49C09C" Ref="Jnoir?"  Part="1" 
+AR Path="/5F3E0F39/5F49C09C" Ref="Jrouge"  Part="1" 
+F 0 "Jrouge" H 6528 5876 50  0000 L CNN
+F 1 "Fiche banane ROUGE" H 6528 5785 50  0000 L CNN
+F 2 "" H 6500 5850 50  0001 C CNN
+F 3 "~" H 6500 5850 50  0001 C CNN
+	1    6500 5850
+	1    0    0    -1  
+$EndComp
+Text HLabel 2150 4950 0    50   Input ~ 0
+SelectHV_1KV
+Text HLabel 2150 5050 0    50   Input ~ 0
+SelectHV_2KV
+Text HLabel 2150 5150 0    50   Input ~ 0
+SelectHV_3KV
+Text HLabel 2150 5450 0    50   Input ~ 0
+SelecteurHV_P
+$Comp
+L Device:R_POT RV1
+U 1 1 5F49FAC7
+P 6450 4750
+F 0 "RV1" H 6381 4796 50  0000 R CNN
+F 1 "R_POT" H 6381 4705 50  0000 R CNN
+F 2 "" H 6450 4750 50  0001 C CNN
+F 3 "~" H 6450 4750 50  0001 C CNN
+	1    6450 4750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Switch:HVselectorALS349 HVselector
+U 1 1 5F4BCB37
+P 3900 5000
+F 0 "HVselector" H 3950 6075 50  0000 C CNN
+F 1 "HVselectorALS349" H 3950 5984 50  0000 C CNN
+F 2 "" H 3900 5000 50  0001 C CNN
+F 3 "" H 3900 5000 50  0001 C CNN
+	1    3900 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:HVselectorALS349 HVselector
+U 2 1 5F4BDADA
+P 5050 5000
+F 0 "HVselector" H 5100 6075 50  0000 C CNN
+F 1 "HVselectorALS349" H 5100 5984 50  0000 C CNN
+F 2 "" H 5050 5000 50  0001 C CNN
+F 3 "" H 5050 5000 50  0001 C CNN
+	2    5050 5000
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4150 4650
+NoConn ~ 4150 4750
+NoConn ~ 4150 4850
+NoConn ~ 4150 5150
+NoConn ~ 4150 5250
+NoConn ~ 4150 5350
+NoConn ~ 5300 5350
+NoConn ~ 5300 5250
+NoConn ~ 5300 5150
+NoConn ~ 5300 4850
+NoConn ~ 5300 4750
+NoConn ~ 5300 4650
+Wire Notes Line
+	3200 3900 3200 5950
+Text Notes 2800 4150 0    50   ~ 0
+facade\nde\nl'appareil
+Text Notes 3550 4350 0    50   ~ 0
+1kV\n2kV\n3kV
+$Comp
+L Device:R_POT_TRIM RV?
+U 1 1 5F4C2EFB
+P 4600 2200
+F 0 "RV?" H 4530 2154 50  0000 R CNN
+F 1 "R_POT_TRIM" H 4530 2245 50  0000 R CNN
+F 2 "" H 4600 2200 50  0001 C CNN
+F 3 "~" H 4600 2200 50  0001 C CNN
+	1    4600 2200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_POT_TRIM RV?
+U 1 1 5F4C39CC
+P 4600 2800
+F 0 "RV?" H 4530 2754 50  0000 R CNN
+F 1 "R_POT_TRIM" H 4530 2845 50  0000 R CNN
+F 2 "" H 4600 2800 50  0001 C CNN
+F 3 "~" H 4600 2800 50  0001 C CNN
+	1    4600 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_POT_TRIM RV?
+U 1 1 5F4C4D94
+P 4600 3400
+F 0 "RV?" H 4530 3354 50  0000 R CNN
+F 1 "R_POT_TRIM" H 4530 3445 50  0000 R CNN
+F 2 "" H 4600 3400 50  0001 C CNN
+F 3 "~" H 4600 3400 50  0001 C CNN
+	1    4600 3400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4150 4150 4250 4150
+Wire Wire Line
+	4250 4150 4250 2200
+Wire Wire Line
+	4250 2200 4450 2200
+Wire Wire Line
+	4150 4250 4300 4250
+Wire Wire Line
+	4300 4250 4300 2800
+Wire Wire Line
+	4300 2800 4450 2800
+Wire Wire Line
+	4150 4350 4350 4350
+Wire Wire Line
+	4350 4350 4350 3400
+Wire Wire Line
+	4350 3400 4450 3400
+Wire Wire Line
+	4600 2350 4600 2450
+Wire Wire Line
+	4600 2450 4850 2450
+Wire Wire Line
+	4600 3550 4600 3650
+Wire Wire Line
+	4600 3650 4850 3650
+Wire Wire Line
+	4850 3650 4850 3050
+Wire Wire Line
+	4600 2950 4600 3050
+Wire Wire Line
+	4600 3050 4850 3050
+Connection ~ 4850 3050
+Wire Wire Line
+	4850 3050 4850 2450
+Wire Wire Line
+	4600 3650 4600 3750
+Connection ~ 4600 3650
+Text HLabel 4600 3750 3    50   Input ~ 0
+HVslectorTrimers
+Text Notes 3550 4850 0    50   ~ 0
+1kV\n2kV\n3kV
+Text Notes 3550 5350 0    50   ~ 0
+1kV\n2kV\n3kV
+Text Notes 3550 5850 0    50   ~ 0
+1kV\n2kV\n3kV
+$EndSCHEMATC

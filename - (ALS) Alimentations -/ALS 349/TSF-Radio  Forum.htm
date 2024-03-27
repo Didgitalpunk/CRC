@@ -1,0 +1,276 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<meta http-equiv='content-type' content='text/html; charset=iso-8859-1'>
+<title>TSF-Radio: Forum</title>
+<link rel="stylesheet" href="../fdsfor.css">
+<link rel="shortcut icon" href="favicon.ico">
+<script language="JavaScript" src="../callswf.js"></script>
+<script type="text/javascript">
+<!--
+function insmi(repdeb,repfin){
+	var input = document.forum.message;
+	input.focus();
+	if(typeof document.selection != 'undefined'){
+		var range = document.selection.createRange();
+		var insText = range.text;
+		range.text = repdeb + insText + repfin;
+		range = document.selection.createRange();
+		if(insText.length == 0){
+			range.move('character',-repfin.length);
+		}else{
+			range.moveStart('character',repdeb.length + insText.length + repfin.length);
+		}
+		range.select();
+	}else if(typeof input.selectionStart != 'undefined'){
+		var start = input.selectionStart;
+		var end = input.selectionEnd;
+		var insText = input.value.substring(start,end);
+		input.value = input.value.substr(0,start) + repdeb + insText + repfin + input.value.substr(end);
+		var pos;
+		if(insText.length == 0){
+			pos = start + repdeb.length;
+		}else{
+			pos = start + repdeb.length + insText.length + repfin.length;
+		}
+		input.selectionStart = pos;
+		input.selectionEnd = pos;
+	}else{
+		var pos;var re = new RegExp('^[0-9]{0,3}$');
+		while(!re.test(pos)){
+			pos = prompt("Insertion à la position (0.." + input.value.length + "):","0");
+		}
+		if(pos > input.value.length){pos = input.value.length;}
+		var insText = prompt("Veuillez entrer le texte à formater:");
+		input.value = input.value.substr(0,pos) + repdeb + insText + repfin + input.value.substr(pos);
+}  	}
+function seag(){
+	if(document.google.query.value==""){document.google.query.focus();}
+	qr=document.google.query.value+"+";
+	for(var i=0;i<3;i++){
+		if(document.google.qry[i].checked){qr=qr+document.google.qry[i].value;}
+	}
+	fc ="http://www.google.fr/search?q="+qr+"&hl=fr&lr=lang_fr&filter=0";
+	var fich = window.open(fc,'google');
+	fich.focus();
+}
+function addlnk(){
+	err=0;if(document.forum.lnk.value==""){err=1;}
+	if(document.forum.tlnk.value==""){err=2;}
+	if(err){
+		alert("Vous devez entrer une adresse http et un texte");
+	}else{
+		document.forum.message.value+='|ø|'+document.forum.lnk.value+'|×|'+document.forum.tlnk.value+'|ö|';
+		document.forum.lnk.value='';document.forum.tlnk.value='';
+}	}
+function pmv(fic){window.open(fic,"_blank","toolbar=no,scrollbars=no,status=no,resizable=no,top=150,left=100,width=700,height=550");}
+function pms(fic){window.open(fic,"_blank","toolbar=no,scrollbars=no,status=no,resizable=no,top=250,left=300,width=220,height=100");}
+// -->
+</script>
+</head>
+<body bgcolor=white background="../ims/nfnd.jpg" topmargin=0 marginheight=0>
+<div id="mn" style="position:absolute; left:120px; top:0px; width:704px; height:126px; z-index:2; border-width:1px; border-style:none;">
+<script LANGUAGE="JavaScript">RunFoo("../menu1.swf",704,126,"#FFFFFF","menu1","");</script></div>
+<center><table border=0 cellpadding=0 cellspacing=0 width=100% bgcolor=#02343B>
+<tr><td><a href="../index.php"><img src="ims/nbh_01.jpg" width=99 height=101 border=0></a></td>
+	<td width=50% background="ims/nbh_02.jpg"><img src="ims/tr.gif" width=1 height=101></td>
+	<td><img src="../ims/bd8.jpg" width=400 height=101></td>
+	<td width=40% background="ims/nbh_02.jpg"><img src="ims/tr.gif" width=1 height=101></td>
+	<td><script LANGUAGE="JavaScript">RunFoo("../pendule.swf",240,101,"#FFFFFF","pend","");</script></td>
+</tr></table>
+<table border=0 cellpadding=2 cellspacing=2 width=99%>
+<tr><td class=t8bg><img src="fldb1.gif"><a href="#mnb">Journaux du site</a> au 07/05/2019 à 11:33</td><td class=t8glc>Forum 2.7.1</td><td class=t8gld><script language="JavaScript" src="saints.js"></script></td>
+</tr></table>
+<table border width=100% cellspacing=0 cellpadding=0>
+<tr class=f8bc><td>
+<a href='ident.php'>S'enregistrer pour poster</a></td><td><a href="#search">Rechercher</a></td><td><a href="#pref">Préférences</a></td><td><p>Pas de Post-it</p></td><td><a href="forumgc.php">Forum CMS</a></td><td><a href="forgal.php">Galerie Forum</a></td></tr></table>
+<center><table border=0 width=100% cellspacing=0 cellpadding=0>
+<tr><td colspan=3><table width=100% cellpadding=0 cellspacing=1 border=0><tr><td colspan=2><table width=100% border bordercolor=black bgcolor=#a8d7fe><tr bgcolor=white><td width=50%><a name='279813'></a>Sujet : <b>Alim HT ALS 349</b></td><td width=50% class=f8nd> De Didgitalpunk&nbsp;&nbsp;Le 20-10-2018 à 14:33&nbsp;sta</td></tr></table></td></tr><tr bgcolor=cornsilk><td class=f8n width=100%><br><ul>Bonjour,<br />
+je me suis acheté il y a quelques mois une alim haute tension CRC ALS 349. Depuis cela, impossible d'avoir une tension correcte au bornes de la bête!<br />
+<br />
+pour ceux qui ne connaissent pas, l'ALS 349 est une alimentation haute tension pouvant delivrer jusqu'a 3kV, avec trois gammes: 1-2-3kV.<br />
+cette alim comporte 10 tubes:<br />
+(2x) 807<br />
+(3x) OA2<br />
+(2x) 6AH6<br />
+(1x) 85A2<br />
+(1x) EZ80<br />
+(1x) 2X2A<br />
+<br />
+<br />
+Lors de la réception, ça commençait déjà mal. une 2X2A en miettes, et une EZ80 fendue.<br />
+une des deux 807 se baladais dans l'alim, et a mon avis c'est elle qui a cause le bris de l'EZ80.<br />
+M'enfin.<br />
+Je rachète une 2X2A, je remplace la EZ80, et je remet la 807 dans son culot. J'allume et... rien. Un méchant grésillement, mais rien. Le grésillement provenait d'une OA2 mal branchée, mais même rebranche, toujours rien.<br />
+La 807 qui se baladait avait le culot décollé. craignant une coupure d'un des fils, je la remplace par une de mon stock et la, surprise! On a de la tension en sortie.<br />
+Me disant que si un des fils de la 807 est coupé, je peut tenter de dessouder le culot et de voir ce que je peut faire. Coup de bol, je réussit a la réparer et le remet donc dans l'alim. toujours de la tension.<br />
+<br />
+Maintenant que l'on a de la tension, encore faut-il que ce soit la bonne! impossible de faire varier la tension, peu importe la gamme:<br />
+Sur la gamme 1kV, j'ai 2,15kV,<br />
+Sur la gamme 2kV, j'ai 3,15kV,<br />
+Sur la gamme 3kV, j'ai 4,275kV,<br />
+<br />
+J'ai échangé les deux 807, les trois OA2, la 2x2A fonctionne (c'est elle qui régule la HT), la EZ80 est la seul que j'ai, mais devrait fonctionner.<br />
+<br />
+Est-ce que quelqu'un a une idée de ce qui pourrait causer cela?<br />
+Serais-ce une 6AH6 ou la 85A2 qui serait en rade?<br />
+<br />
+Merci d'avance,<br />
+Francois </ul><br></td><td valign=top><table border=0><tr><td>&nbsp;<A class=aroug HREF='im/279813192099crc_als_349_alim_3_kv.jpg' target='_blank'><img src="min/279813192099crc_als_349_alim_3_kv.jpg" border=1></A></td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr></table></td></tr></table><br></td></tr><tr><td colspan=3><table width=100% cellpadding=0 cellspacing=1 border=0><tr><td colspan=2><table width=100% border bordercolor=black bgcolor=#a8d7fe><tr bgcolor=white><td width=50%><a name='279814'></a>Sujet : <b>Alim HT ALS 349</b></td><td width=50% class=f8nd> De adams &nbsp;&nbsp;Le 20-10-2018 à 16:36&nbsp;sta</td></tr></table></td></tr><tr bgcolor=cornsilk><td class=f8n width=100% colspan=2><br><ul>Bonjour <br />
+<br />
+''la 2x2A fonctionne (c'est elle qui régule la HT)''<br />
+C'est la valve THT , débit max 8 mA .<br />
+ <br />
+Sur la mienne , le potentiomètre principal était coupé , je crois que c'était un gros modèle bobiné , j'avais monté quelque chose de plus facile à trouver et ça marchait .<br />
+<br />
+ </ul><br></td></tr></table><br></td></tr><tr><td colspan=3><table width=100% cellpadding=0 cellspacing=1 border=0><tr><td colspan=2><table width=100% border bordercolor=black bgcolor=#a8d7fe><tr bgcolor=white><td width=50%><a name='279815'></a>Sujet : <b>Alim HT ALS 349</b></td><td width=50% class=f8nd> De Didgitalpunk&nbsp;&nbsp;Le 20-10-2018 à 17:09&nbsp;sta</td></tr></table></td></tr><tr bgcolor=cornsilk><td class=f8n width=100% colspan=2><br><ul>Bonjour Adams,<br />
+C'est en effet ce que j'ai suspecté en premier, mais après l'avoir enlevé, nettoyé, et mesuré, Il est en état de fonctionnement. j'ai mesuré les résistances connectes au potentiomètre, et elles sont aussi fonctionnelles.<br />
+J'ai vu sur le schéma qu'il y a une diode connectée a une des 4Y25 (des 807 dans mon cas.) a quoi sert-elle? je suspecterait un problème avec celle-ci, car elle est en piteux état cosmétique. </ul><br></td></tr></table><br></td></tr><tr><td colspan=3><table width=100% cellpadding=0 cellspacing=1 border=0><tr><td colspan=2><table width=100% border bordercolor=black bgcolor=#a8d7fe><tr bgcolor=white><td width=50%><a name='279816'></a>Sujet : <b>Alim HT ALS 349</b></td><td width=50% class=f8nd> De F6FLC&nbsp;&nbsp;Le 20-10-2018 à 17:09&nbsp;sta</td></tr></table></td></tr><tr bgcolor=cornsilk><td class=f8n width=100% colspan=2><br><ul>Bonjour,<br />
+<br />
+elle est tombée pour avoir autant de bris ?<br />
+<br />
+Michel...<br />
+ </ul><br></td></tr></table><br></td></tr><tr><td colspan=3><table width=100% cellpadding=0 cellspacing=1 border=0><tr><td colspan=2><table width=100% border bordercolor=black bgcolor=#a8d7fe><tr bgcolor=white><td width=50%><a name='279817'></a>Sujet : <b>Alim HT ALS 349</b></td><td width=50% class=f8nd> De Didgitalpunk&nbsp;&nbsp;Le 20-10-2018 à 17:31&nbsp;sta</td></tr></table></td></tr><tr bgcolor=cornsilk><td class=f8n width=100% colspan=2><br><ul>Je me demande bien Michel! sur l'annonce il était bien marqué que la 2X2A était cassée, mais rien d'autre... :/ <br />
+Après, vu l’état de la tôlerie et de la peinture, je pense que son dernier propriétaire s'en servait comme support pour faire pousser des champignons dans sa cave! la peinture est bonne a refaire et se décolle par endroits.<br />
+<br />
+J'ai oublie de préciser, le galva ne fonctionne pas! du coup je mesure tout avec mon metrix 430...<br />
+je suis en train de demonter celui-ci pour voir ce qui ne va pas, et pour l'enstant je ne voit que de l'oxidation... </ul><br></td></tr></table><br></td></tr><tr><td colspan=3><table width=100% cellpadding=0 cellspacing=1 border=0><tr><td colspan=2><table width=100% border bordercolor=black bgcolor=#a8d7fe><tr bgcolor=white><td width=50%><a name='279820'></a>Sujet : <b>Alim HT ALS 349</b></td><td width=50% class=f8nd> De adams &nbsp;&nbsp;Le 20-10-2018 à 18:33&nbsp;sta</td></tr></table></td></tr><tr bgcolor=cornsilk><td class=f8n width=100% colspan=2><br><ul><br />
+L'écran de U5 est alimenté par une alim ''flottante '' aux bornes de C10 je suppose qu'il  doit y avoir dans les 300 V.<br />
+U6 semble être un régulateur et U7 le tube ballast .<br />
+<br />
+Ces alim étaient fabriquées pour le CEA , sans doute avec un cahier des charges bien précis .<br />
+<br />
+ </ul><br></td></tr></table><br></td></tr><tr><td colspan=3><table width=100% cellpadding=0 cellspacing=1 border=0><tr><td colspan=2><table width=100% border bordercolor=black bgcolor=#a8d7fe><tr bgcolor=white><td width=50%><a name='279822'></a>Sujet : <b>Alim HT ALS 349</b></td><td width=50% class=f8nd> De F6CER&nbsp;&nbsp;Le 20-10-2018 à 18:36&nbsp;sta</td></tr></table></td></tr><tr bgcolor=cornsilk><td class=f8n width=100% colspan=2><br><ul>Bonjour<br />
+Attention ce genre d'alim était utilisé pour alimenter des tubes compteur Geiger , elles ne peuvent pas débiter de courant important  </ul><br></td></tr></table><br></td></tr><tr><td colspan=3><table width=100% cellpadding=0 cellspacing=1 border=0><tr><td colspan=2><table width=100% border bordercolor=black bgcolor=#a8d7fe><tr bgcolor=white><td width=50%><a name='279842'></a>Sujet : <b>Alim HT ALS 349</b></td><td width=50% class=f8nd> De Didgitalpunk&nbsp;&nbsp;Le 21-10-2018 à 08:38&nbsp;sta</td></tr></table></td></tr><tr bgcolor=cornsilk><td class=f8n width=100%><br><ul>Tout a fait F6CER!<br />
+Et c'est entre autre pour cela que je l'ai acheté!<br />
+J'ai quelques tubes qui requièrent ce genre de haute tension ---><br />
+1B67 / VG10A de chez Victoreen, 2,2mg/cm^2<br />
+150AVP de marque RTC<br />
+4.A.1 de chez L.C.T<br />
+3.G.5 de chez L.C.T<br />
+<br />
+Je demanderait de l'aide pour trouver de la doc sur le 4.A.1 de L.C.T, car la seul double page de doc sur L.C.T que j'ai n'en fait pas mention (j'ai inclu un scan de la doc en question en PDF, au casou ca interesserait les archives) </ul><br></td><td valign=top><table border=0><tr><td>&nbsp;<A class=aroug HREF='im/279842dsc_00551.jpg' target='_blank'><img src="min/279842dsc_00551.jpg" border=1></A><A class=aroug HREF='hd/279842dsc_00551.jpg' target='_blank'><img src='hd.gif' height=50</A></td><td>&nbsp;<A class=aroug HREF='im/279842lct.pdf' target='_blank'>Fichier<br>.PDF</A></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr></table></td></tr></table><br></td></tr><tr><td colspan=3><table width=100% cellpadding=0 cellspacing=1 border=0><tr><td colspan=2><table width=100% border bordercolor=black bgcolor=#a8d7fe><tr bgcolor=white><td width=50%><a name='279844'></a>Sujet : <b>Alim HT ALS 349</b></td><td width=50% class=f8nd> De Didgitalpunk&nbsp;&nbsp;Le 21-10-2018 à 10:51&nbsp;sta</td></tr></table></td></tr><tr bgcolor=cornsilk><td class=f8n width=100% colspan=2><br><ul>J'ai complètement démonté le galvanomètre en attendant d'avoir plus de réponses, et le cadre est coupé. Me reste plus qu'a en trouver un autre.<br />
+Il y a une résistance de 14,5Kohm en // du galva , et la résistance affiché sur la platine est de 2500 ohm.<br />
+la résistance affiche sur la platine est celle juste du galva, ou celle du galva + la résistance de 14.5k en parallèle? </ul><br></td></tr></table><br></td></tr><tr><td colspan=3><table width=100% cellpadding=0 cellspacing=1 border=0><tr><td colspan=2><table width=100% border bordercolor=black bgcolor=#a8d7fe><tr bgcolor=white><td width=50%><a name='279845'></a>Sujet : <b>Alim HT ALS 349</b></td><td width=50% class=f8nd> De Didgitalpunk&nbsp;&nbsp;Le 21-10-2018 à 10:54&nbsp;sta</td></tr></table></td></tr><tr bgcolor=cornsilk><td class=f8n width=100% colspan=2><br><ul>Oh, de plus, comment s'y prendrait-on pour nettoyer le miroir? avec un simple chiffon et de l'eau savonneuse, ou un truc plus coriace comme du miror? </ul><br></td></tr></table><br></td></tr><tr><td colspan=3><table width=100% cellpadding=0 cellspacing=1 border=0><tr><td colspan=2><table width=100% border bordercolor=black bgcolor=#a8d7fe><tr bgcolor=white><td width=50%><a name='279883'></a>Sujet : <b>Alim HT ALS 349</b></td><td width=50% class=f8nd> De Didgitalpunk&nbsp;&nbsp;Le 22-10-2018 à 14:46&nbsp;sta</td></tr></table></td></tr><tr bgcolor=cornsilk><td class=f8n width=100% colspan=2><br><ul>Des idées? </ul><br></td></tr></table><br></td></tr><tr><td colspan=3><table width=100% cellpadding=0 cellspacing=1 border=0><tr><td colspan=2><table width=100% border bordercolor=black bgcolor=#a8d7fe><tr bgcolor=white><td width=50%><a name='279889'></a>Sujet : <b>Alim HT ALS 349</b></td><td width=50% class=f8nd> De adams &nbsp;&nbsp;Le 22-10-2018 à 17:41&nbsp;sta</td></tr></table></td></tr><tr bgcolor=cornsilk><td class=f8n width=100%><br><ul>Bonjour <br />
+<br />
+Si le cadre est coupé  sauf près des soudures je crois que c'est cuit .<br />
+<br />
+Sur le forum DOC TSF    , Mr GUYEZ  vendait (pas cher)  un voltmètre électrostatique HT .<br />
+<br />
+<img src="lienext.gif"><a class=aroug href="https://forum.doctsf.com/t/rangement-et-tri-du-brol/14822/2" title="Lien : https://forum.doctsf.com/t/rangement-et-tri-du-brol/14822/2" target="_blank">https://forum.doctsf.com/…</a><br />
+<br />
+Je ne sais pas si il l'a encore .<br />
+ </ul><br></td><td valign=top><table border=0><tr><td>&nbsp;<A class=aroug HREF='im/279889turner.jpg' target='_blank'><img src="min/279889turner.jpg" border=1></A></td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr></table></td></tr></table><br></td></tr><tr><td colspan=3><table width=100% cellpadding=0 cellspacing=1 border=0><tr><td colspan=2><table width=100% border bordercolor=black bgcolor=#a8d7fe><tr bgcolor=white><td width=50%><a name='279891'></a>Sujet : <b>Alim HT ALS 349</b></td><td width=50% class=f8nd> De Didgitalpunk&nbsp;&nbsp;Le 22-10-2018 à 18:23&nbsp;sta</td></tr></table></td></tr><tr bgcolor=cornsilk><td class=f8n width=100% colspan=2><br><ul>A vrai dire, le galva n'est pas un gros problème. Il y a sur mon modèle deux prises bananes a l’arrière qui viennent se connecter en parallèle au galva, donc je me bricolerait un truc pour éviter d'avoir mon Metrix constamment connecté. Je pense tout de même que le cadre lui même est fichu, car les ressors sont encore bons, et les fils partent bien des soudures.<br />
+<br />
+Mais tout cela ne servira a rien si je ne peut toujours pas ajuster la tension!<br />
+J'ai vérifié la diode dont je parlais précédemment, et elle est encore bonne. </ul><br></td></tr></table><br></td></tr><tr><td colspan=3><table width=100% cellpadding=0 cellspacing=1 border=0><tr><td colspan=2><table width=100% border bordercolor=black bgcolor=#a8d7fe><tr bgcolor=white><td width=50%><a name='279895'></a>Sujet : <b>Alim HT ALS 349</b></td><td width=50% class=f8nd> De adams &nbsp;&nbsp;Le 22-10-2018 à 19:02&nbsp;sta</td></tr></table></td></tr><tr bgcolor=cornsilk><td class=f8n width=100% colspan=2><br><ul>Quand vous tournez le potentiomètre de tension , est ce que ça change les tensions plaques de U7 et U8 ? </ul><br></td></tr></table><br></td></tr><tr><td colspan=3><table width=100% cellpadding=0 cellspacing=1 border=0><tr><td colspan=2><table width=100% border bordercolor=black bgcolor=#a8d7fe><tr bgcolor=white><td width=50%><a name='279896'></a>Sujet : <b>Alim HT ALS 349</b></td><td width=50% class=f8nd> De Didgitalpunk&nbsp;&nbsp;Le 22-10-2018 à 19:21&nbsp;sta</td></tr></table></td></tr><tr bgcolor=cornsilk><td class=f8n width=100% colspan=2><br><ul>non, j'ai 1600V sur U7, et 2100V sur U8, commutateur en position 1KV, peut importe la position du potentiomètre </ul><br></td></tr></table><br></td></tr><tr><td colspan=3><table width=100% cellpadding=0 cellspacing=1 border=0><tr><td colspan=2><table width=100% border bordercolor=black bgcolor=#a8d7fe><tr bgcolor=white><td width=50%><a name='279899'></a>Sujet : <b>Alim HT ALS 349</b></td><td width=50% class=f8nd> De adams &nbsp;&nbsp;Le 22-10-2018 à 20:04&nbsp;sta</td></tr></table></td></tr><tr bgcolor=cornsilk><td class=f8n width=100% colspan=2><br><ul> <br />
+Regardez R16  68K .  <br />
+ Je suppose que la sortie 4 de T1 , la cathode de U2   , le - de C9 et le bas de R16 vont à la masse qui n'est pas notée sur le schéma . <br />
+Les tensions sur U et U7 ne devraient pas excéder 300 V  , s'il y a 1600 V , j'ai peur pour les 6BH6 .<br />
+En sortant la 2X2 et les 807 les tensions des 6BH6 devraient revenir à la normale et le potentiomètre devrait agir sue les tensions plaque . </ul><br></td></tr></table><br></td></tr><tr><td colspan=3><table width=100% cellpadding=0 cellspacing=1 border=0><tr><td colspan=2><table width=100% border bordercolor=black bgcolor=#a8d7fe><tr bgcolor=white><td width=50%><a name='279901'></a>Sujet : <b>Alim HT ALS 349</b></td><td width=50% class=f8nd> De Guy Allo&nbsp;&nbsp;Le 22-10-2018 à 22:06&nbsp;sta</td></tr></table></td></tr><tr bgcolor=cornsilk><td class=f8n width=100% colspan=2><br><ul>Bonsoir,<br />
+Les capas en parallèle avec les tubes régulateurs 0A2 et 85a2 sont assez inhabituelles.<br />
+<br />
+Il doit manquer des connexions à la masse sur le plan  comme l'a dit adams, car je n'arrive pas bien à suivre le schéma.<br />
+Vu les tensions en jeu et la valeur des résistances, la moindre fuite dans une capa ou sur un isolant va causer des soucis. </ul><br></td></tr></table><br></td></tr><tr><td colspan=3><table width=100% cellpadding=0 cellspacing=1 border=0><tr><td colspan=2><table width=100% border bordercolor=black bgcolor=#a8d7fe><tr bgcolor=white><td width=50%><a name='279910'></a>Sujet : <b>Alim HT ALS 349</b></td><td width=50% class=f8nd> De Didgitalpunk&nbsp;&nbsp;Le 23-10-2018 à 06:40&nbsp;sta</td></tr></table></td></tr><tr bgcolor=cornsilk><td class=f8n width=100% colspan=2><br><ul>je viens de vérifier, et non, le 4 de T1 et tout ce qui y est connecté n'est pas relié a la masse.<br />
+<br />
+Quand au 6BH6, après avoir retiré les deux 807 et la 2X2, je n'ai plus que 2 volts comme tension au plaques, peut importe la position du potentiomètre.<br />
+<br />
+Cependant si je met la sélecteur de sortie en position négative, je passe a -11V, qui eux varient avec le potentiomètre entre -11 et -15. </ul><br></td></tr></table><br></td></tr><tr><td colspan=3><table width=100% cellpadding=0 cellspacing=1 border=0><tr><td colspan=2><table width=100% border bordercolor=black bgcolor=#a8d7fe><tr bgcolor=white><td width=50%><a name='279913'></a>Sujet : <b>Alim HT ALS 349</b></td><td width=50% class=f8nd> De adams &nbsp;&nbsp;Le 23-10-2018 à 08:14&nbsp;sta</td></tr></table></td></tr><tr bgcolor=cornsilk><td class=f8n width=100% colspan=2><br><ul>Bonjour  <br />
+Quelques photos sur ce site .<br />
+<img src="lienext.gif"><a class=aroug href="http://www.michelterrier.fr/radiocol/detail2012/alimentation_3000v_crc_als_349.htm" title="Lien : http://www.michelterrier.fr/radiocol/detail2012/alimentation_3000v_crc_als_349.htm" target="_blank">http://www.michelterrier.…</a><br />
+<br />
+Il y a 3 x  OA2  et  une 85A2 ,est ce que ces tubes s'allument ?<br />
+<br />
+Entre le bas de C2  et K de U2 ,il manque peut être un point de connexion , <br />
+Si c'est le cas , le - de l'alim 300 V (EZ80)   retourne à la masse par R10  (25K) et le régulateur 85A2 .<br />
+Le - de l'alim EZ80 serait au minimum  à + 85 V par rapport à la masse ……………<br />
+<br />
+Comme le fait remarquer Guy Allo , une capa en // sur un régulateur à gaz  risque de le faire osciller . </ul><br></td></tr></table><br></td></tr><tr><td colspan=3><table width=100% cellpadding=0 cellspacing=1 border=0><tr><td colspan=2><table width=100% border bordercolor=black bgcolor=#a8d7fe><tr bgcolor=white><td width=50%><a name='279915'></a>Sujet : <b>Alim HT ALS 349</b></td><td width=50% class=f8nd> De Didgitalpunk&nbsp;&nbsp;Le 23-10-2018 à 08:57&nbsp;sta</td></tr></table></td></tr><tr bgcolor=cornsilk><td class=f8n width=100% colspan=2><br><ul>Bonjour Adams,<br />
+Il manque en effet sur le schéma un point de connexion entre C2 et K de U2.<br />
+je n'ai par contre pas le - de l'alim 300V a +85V par rapport a la masse, et aucune des 0A2 et la 85A2 ne me donne un <img class=ih src=s23.gif align=middle>V a leur bornes<br />
+je pense que les tubes sont bon, justes pas alimentés.<br />
+<br />
+entre la borne 4 de T1 et K de U10, j'ai bien environs 440V. Même chose a l’entrée de R13, par contre entre la borne 4 de T1 et la sortie de R13, plus rien.<br />
+De plus, quand je branche mon multimètre entre la borne 4 de T1 et K de U10 , la tension initiale est bien de 440V, mais baisse rapidement a 30V, avant de remonter lentement a 90V. </ul><br></td></tr></table><br></td></tr><tr><td colspan=3><table width=100% cellpadding=0 cellspacing=1 border=0><tr><td colspan=2><table width=100% border bordercolor=black bgcolor=#a8d7fe><tr bgcolor=white><td width=50%><a name='279916'></a>Sujet : <b>Alim HT ALS 349</b></td><td width=50% class=f8nd> De Didgitalpunk&nbsp;&nbsp;Le 23-10-2018 à 09:16&nbsp;sta</td></tr></table></td></tr><tr bgcolor=cornsilk><td class=f8n width=100% colspan=2><br><ul>je viens de tester la résistance de R13... elle est coupée!<img class=ih src=s10.gif align=middle><br />
+je la remplace temporairement par deux 1.5K en séries, histoire de continuer a dépanner<br />
+ </ul><br></td></tr></table><br></td></tr><tr><td colspan=3><table width=100% cellpadding=0 cellspacing=1 border=0><tr><td colspan=2><table width=100% border bordercolor=black bgcolor=#a8d7fe><tr bgcolor=white><td width=50%><a name='279919'></a>Sujet : <b>Alim HT ALS 349</b></td><td width=50% class=f8nd> De adams &nbsp;&nbsp;Le 23-10-2018 à 10:48&nbsp;sta</td></tr></table></td></tr><tr bgcolor=cornsilk><td class=f8n width=100% colspan=2><br><ul>Il faut que U9 s'allume , on aura -85 V en haut de la chaine RVAR  ,RVI ,R1  ...……..<br />
+La tension du curseur de RV 1 devrait varier , de -V  à -V'  .<br />
+ La manœuvre de ce pot .fera changer les tensions plaque des 6AH6 qui pilotent  les 807 .<br />
+<br />
+ </ul><br></td></tr></table><br></td></tr><tr><td colspan=3><table width=100% cellpadding=0 cellspacing=1 border=0><tr><td colspan=2><table width=100% border bordercolor=black bgcolor=#a8d7fe><tr bgcolor=white><td width=50%><a name='279920'></a>Sujet : <b>Alim HT ALS 349</b></td><td width=50% class=f8nd> De Didgitalpunk&nbsp;&nbsp;Le 23-10-2018 à 11:08&nbsp;sta</td></tr></table></td></tr><tr bgcolor=cornsilk><td class=f8n width=100% colspan=2><br><ul>bon, j'ai de nouveau de la tension, un <img class=ih src=s23.gif align=middle>V de 85 sur la 85A2mais mon 300V n'est pas décalé de 85V, il l'est de 160V!<br />
+par contre rien sur U3. je l'ai changée avec une qui fonctionne, et toujours rien.<br />
+R5 fait bien 1Mohm<br />
+ </ul><br></td></tr></table><br></td></tr><tr><td colspan=3><table width=100% cellpadding=0 cellspacing=1 border=0><tr><td colspan=2><table width=100% border bordercolor=black bgcolor=#a8d7fe><tr bgcolor=white><td width=50%><a name='279921'></a>Sujet : <b>Alim HT ALS 349</b></td><td width=50% class=f8nd> De Didgitalpunk&nbsp;&nbsp;Le 23-10-2018 à 11:19&nbsp;sta</td></tr></table></td></tr><tr bgcolor=cornsilk><td class=f8n width=100% colspan=2><br><ul>ok, entre K de U9 et le curseur de RV1, j'ai -V=-24V, et -V'=-77V<br />
+ </ul><br></td></tr></table><br></td></tr><tr><td colspan=3><table width=100% cellpadding=0 cellspacing=1 border=0><tr><td colspan=2><table width=100% border bordercolor=black bgcolor=#a8d7fe><tr bgcolor=white><td width=50%><a name='279922'></a>Sujet : <b>Alim HT ALS 349</b></td><td width=50% class=f8nd> De adams &nbsp;&nbsp;Le 23-10-2018 à 11:39&nbsp;sta</td></tr></table></td></tr><tr bgcolor=cornsilk><td class=f8n width=100% colspan=2><br><ul>Je pense qu'il manque quelque chose sur le schéma autour de U3.<br />
+Avec 1 MOhms et 85 V  le 0A2  ne peut pas s'allumer .<br />
+Les tubes à gaz s'amorcent avec une tension supérieure à leur tension de référence .<br />
+<br />
+Si je comprends bien ,ce que vous nommez un Delta V  est une  tension mesurée , <br />
+un Delta V est une variation , par exemple la tension sur le curseur du pot. en fonction de sa position .<br />
+<br />
+160 V peut être normal , il faut ajouter aux 85 V du tube , la chute de tension dans R10<br />
+A propos , ça ne serait pas - 160 V ?  </ul><br></td></tr></table><br></td></tr><tr><td colspan=3><table width=100% cellpadding=0 cellspacing=1 border=0><tr><td colspan=2><table width=100% border bordercolor=black bgcolor=#a8d7fe><tr bgcolor=white><td width=50%><a name='279923'></a>Sujet : <b>Alim HT ALS 349</b></td><td width=50% class=f8nd> De adams &nbsp;&nbsp;Le 23-10-2018 à 11:46&nbsp;sta</td></tr></table></td></tr><tr bgcolor=cornsilk><td class=f8n width=100% colspan=2><br><ul>Je n'avais pas vu votre message de 11H 19<br />
+Là on peut parler d'un delta V de 53 V <br />
+Le courant doit retourner au +  par les 6AH6.<br />
+ </ul><br></td></tr></table><br></td></tr><tr><td colspan=3><table width=100% cellpadding=0 cellspacing=1 border=0><tr><td colspan=2><table width=100% border bordercolor=black bgcolor=#a8d7fe><tr bgcolor=white><td width=50%><a name='279924'></a>Sujet : <b>Alim HT ALS 349</b></td><td width=50% class=f8nd> De Didgitalpunk&nbsp;&nbsp;Le 23-10-2018 à 12:41&nbsp;sta</td></tr></table></td></tr><tr bgcolor=cornsilk><td class=f8n width=100%><br><ul>bon, on apprend, on apprend. C'est un peut trop lent, mais on apprend. Quelqu'un connaît la procédure pour remettre la fumée magique dans les condensateurs? </ul><br></td><td valign=top><table border=0><tr><td>&nbsp;<A class=aroug HREF='im/279924dsc_00591.jpg' target='_blank'><img src="min/279924dsc_00591.jpg" border=1></A><A class=aroug HREF='hd/279924dsc_00591.jpg' target='_blank'><img src='hd.gif' height=50</A></td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr></table></td></tr></table><br></td></tr><tr><td colspan=3><table width=100% cellpadding=0 cellspacing=1 border=0><tr><td colspan=2><table width=100% border bordercolor=black bgcolor=#a8d7fe><tr bgcolor=white><td width=50%><a name='279925'></a>Sujet : <b>Alim HT ALS 349</b></td><td width=50% class=f8nd> De Didgitalpunk&nbsp;&nbsp;Le 23-10-2018 à 13:05&nbsp;sta</td></tr></table></td></tr><tr bgcolor=cornsilk><td class=f8n width=100% colspan=2><br><ul>Pour remplacer les vieux condensateurs polarisés, on reste sur de l'électrolytique?<br />
+aussi, pour les anciens CAPATROP, quel genre de condo est le plus approprié? Film, ceramique, MLCC? </ul><br></td></tr></table><br></td></tr><tr><td colspan=3><table width=100% cellpadding=0 cellspacing=1 border=0><tr><td colspan=2><table width=100% border bordercolor=black bgcolor=#a8d7fe><tr bgcolor=white><td width=50%><a name='279926'></a>Sujet : <b>Alim HT ALS 349</b></td><td width=50% class=f8nd> De Radiolo&nbsp;&nbsp;Le 23-10-2018 à 14:38&nbsp;sta</td></tr></table></td></tr><tr bgcolor=cornsilk><td class=f8n width=100% colspan=2><br><ul>''procédure pour remettre la fumée magique dans les condensateurs?''<br />
+comme pour faire re rentrer le dentifrice dans son tube……. <img class=ih src=s5.gif align=middle><br />
+pour les capas polarisées pas d'autre solution de petite taille que l'electrolytique.<br />
+pour les autres tout convient du moment que la tension service est respectée<br />
+ </ul><br></td></tr></table><br></td></tr><tr><td colspan=3><table width=100% cellpadding=0 cellspacing=1 border=0><tr><td colspan=2><table width=100% border bordercolor=black bgcolor=#a8d7fe><tr bgcolor=white><td width=50%><a name='279927'></a>Sujet : <b>Alim HT ALS 349</b></td><td width=50% class=f8nd> De Didgitalpunk&nbsp;&nbsp;Le 23-10-2018 à 14:47&nbsp;sta</td></tr></table></td></tr><tr bgcolor=cornsilk><td class=f8n width=100% colspan=2><br><ul>Merci Radiolo :P<br />
+ </ul><br></td></tr></table><br></td></tr><tr><td colspan=3><table width=100% cellpadding=0 cellspacing=1 border=0><tr><td colspan=2><table width=100% border bordercolor=black bgcolor=#a8d7fe><tr bgcolor=white><td width=50%><a name='279932'></a>Sujet : <b>Alim HT ALS 349</b></td><td width=50% class=f8nd> De Michel87&nbsp;&nbsp;Le 23-10-2018 à 17:21&nbsp;sta</td></tr></table></td></tr><tr bgcolor=cornsilk><td class=f8n width=100% colspan=2><br><ul><br />
+ Bonjour,<br />
+<br />
+Pour les capas polarisées, si se sont de très petites valeurs, on peut remplacer par des classiques, sous réserve de la place disponible, bien sûr..  </ul><br></td></tr></table><br></td></tr><tr><td colspan=3><table width=100% cellpadding=0 cellspacing=1 border=0><tr><td colspan=2><table width=100% border bordercolor=black bgcolor=#a8d7fe><tr bgcolor=white><td width=50%><a name='279935'></a>Sujet : <b>Alim HT ALS 349</b></td><td width=50% class=f8nd> De Guy Allo&nbsp;&nbsp;Le 23-10-2018 à 18:53&nbsp;sta</td></tr></table></td></tr><tr bgcolor=cornsilk><td class=f8n width=100% colspan=2><br><ul><br />
+Quelques détails sur les régulatrices de tension à gaz.<br />
+<br />
+Le fonctionnement est un peu comme celui d'une zener, mais uniquement si l'on ne regarde pas trop les détails.<br />
+<br />
+Une OA2 va réguler la tension à ses bornes à environ 150V, cette tension est très stable dans le temps.<br />
+Le courant qui la traverse doit être compris entre 5 et 30 mA<br />
+La tension d'amorçage (dans le noir) est inférieure à 225V <br />
+Si la lampe est dans la lumière l'amorçage se produit avec une tension un peu plus basse  <br />
+<br />
+Une régulatrice à gaz doit toujours être alimentée en courant, c'est à dire qu'il faut partir d'une source de tension plus élevée que la tension d'amorçage et mettre une résistance chutrice en série qui va limiter le courant. <br />
+Si l'on monte doucement la tension aux bornes de la 0A2, aucun courant ne la traverse <br />
+Si la tension continue de monter, il ne se passe rien, même si l'on dépasse les 150V à ses bornes. A une tension généralement entre 180V et 200V il se produit une ionisation du gaz et la régulatrice s'amorce; à ce moment l'on voit une lueur à travers le verre et la tension tombe à 150V. A partir de ce moment la tension reste très stable tant que le courant ne passe pas en dessous de 5 mA.<br />
+<br />
+Bien regarder les fiches techniques pour les valeurs de résistance série.<br />
+Si les tubes sont montés en série pour réguler une tension à 300v en utilisant 2 tubes 0a2, il faut s'assurer de l'ordre d'amorçage des deux régulatrices si l'on veut un fonctionnement stable.<br />
+C'est bien expliqué dans les fiches techniques des tubes.<br />
+<br />
+Pour la 85A2 c'est le même fonctionnement, mais la tension régulée est de 85V, la tension d'amorçage est de 125V max et le courant doit être entre 1 et 10 mA<br />
+<br />
+<br />
+ </ul><br></td></tr></table><br></td></tr><tr><td colspan=3><table width=100% cellpadding=0 cellspacing=1 border=0><tr><td colspan=2><table width=100% border bordercolor=black bgcolor=#a8d7fe><tr bgcolor=white><td width=50%><a name='279937'></a>Sujet : <b>Alim HT ALS 349</b></td><td width=50% class=f8nd> De Didgitalpunk&nbsp;&nbsp;Le 23-10-2018 à 19:57&nbsp;sta</td></tr></table></td></tr><tr bgcolor=cornsilk><td class=f8n width=100% colspan=2><br><ul>cool! merci pour l'info Guy!<br />
+<br />
+Je re-déterrerais le sujet une fois les condos remplacés; 8uF, c'est plus trop commun comme valeur et j'ai donc pas ça sous la main <img class=ih src=s10.gif align=middle><br />
+<br />
+Merci Adams pour l'aide que tu m'a apporté jusque la, j’espère que tu sera la pour la suite ( au cas ou ça ne serait pas que les condos qui causent problème...)<img class=ih src=s12.gif align=middle> </ul><br></td></tr></table><br></td></tr><tr><td colspan=3><table width=100% cellpadding=0 cellspacing=1 border=0><tr><td colspan=2><table width=100% border bordercolor=black bgcolor=#a8d7fe><tr bgcolor=white><td width=50%><a name='279940'></a>Sujet : <b>Alim HT ALS 349</b></td><td width=50% class=f8nd> De Radiolo&nbsp;&nbsp;Le 23-10-2018 à 20:45&nbsp;sta</td></tr></table></td></tr><tr bgcolor=cornsilk><td class=f8n width=100% colspan=2><br><ul>les chimiques en general c'est du filtrage et les tolérances assez larges souvent -10% +30%<br />
+mettez donc du 10micros qui peu le plus peu le moins </ul><br></td></tr></table><br></td></tr><tr><td colspan=3><table width=100% cellpadding=0 cellspacing=1 border=0><tr><td colspan=2><table width=100% border bordercolor=black bgcolor=#a8d7fe><tr bgcolor=white><td width=50%><a name='279943'></a>Sujet : <b>Alim HT ALS 349</b></td><td width=50% class=f8nd> De adams &nbsp;&nbsp;Le 23-10-2018 à 21:57&nbsp;sta</td></tr></table></td></tr><tr bgcolor=cornsilk><td class=f8n width=100% colspan=2><br><ul>D'après le schéma je ne vois que 2 chimiques , C9  ,C10 et , les autres sont des capa qui durent plus longtemps , on en voit sur les photos :<br />
+<br />
+<img src="lienext.gif"><a class=aroug href="http://www.michelterrier.fr/radiocol/detail2012/alimentation_3000v_crc_als_349.htm" title="Lien : http://www.michelterrier.fr/radiocol/detail2012/alimentation_3000v_crc_als_349.htm" target="_blank">http://www.michelterrier.…</a><br />
+<br />
+Mais il peut arriver qu'une se mette à fuir , sur mon exemplaire je n'en ai changé aucune<br />
+ Trouvé il y a 25 ans ,  essayé il y a cinq ou six ans , il fonctionnait toujours .<br />
+ </ul><br></td></tr></table><br></td></tr><tr><td colspan=3><table width=100% cellpadding=0 cellspacing=1 border=0><tr><td colspan=2><table width=100% border bordercolor=black bgcolor=#a8d7fe><tr bgcolor=white><td width=50%><a name='279944'></a>Sujet : <b>Alim HT ALS 349</b></td><td width=50% class=f8nd> De Guy Allo&nbsp;&nbsp;Le 24-10-2018 à 00:48&nbsp;sta</td></tr></table></td></tr><tr bgcolor=cornsilk><td class=f8n width=100% colspan=2><br><ul>Ne changer les capas que si un vrai default est constaté.<br />
+Les composants utilisés étaient de très bonne qualité et sont rarement défectueux.<br />
+<br />
+Evidement ce n'est pas un capacimètre à 10 euros qui permettra de tester les capas.<br />
+Le test le plus important est le courant de fuite sous la tension nominale.  </ul><br></td></tr></table><br></td></tr><tr><td colspan=3><table width=100% cellpadding=0 cellspacing=1 border=0><tr><td colspan=2><table width=100% border bordercolor=black bgcolor=#a8d7fe><tr bgcolor=white><td width=50%><a name='282161'></a>Sujet : <b>Alim HT ALS 349</b></td><td width=50% class=f8nd> De Didgitalpunk&nbsp;&nbsp;Le 27-01-2019 à 18:15&nbsp;sta</td></tr></table></td></tr><tr bgcolor=cornsilk><td class=f8n width=100% colspan=2><br><ul>Me revoilà!<br />
+<br />
+J'ai enfin changé les deux chimiques et la résistance qui avait lâché, et j'en ai profité pour changer tous les condos CAPATROP de 0.1uF par des condensateurs a film.<br />
+<br />
+Malgré cela, j'ai toujours la tension de sortie qui fait n'importe quoi, donc il y a autre chose qui cloche...<br />
+<br />
+A travers R10 j'ai un peu moins de 140V<br />
+A travers R17 j'ai 70V<br />
+A travers R5, j'ai 0V, mais la résistance est bonne.<br />
+<br />
+ </ul><br></td></tr></table><br></td></tr><tr><td colspan=3><table width=100% cellpadding=0 cellspacing=1 border=0><tr><td colspan=2><table width=100% border bordercolor=black bgcolor=#a8d7fe><tr bgcolor=white><td width=50%><a name='282321'></a>Sujet : <b>Alim HT ALS 349</b></td><td width=50% class=f8nd> De Didgitalpunk&nbsp;&nbsp;Le 03-02-2019 à 14:08&nbsp;sta</td></tr></table></td></tr><tr bgcolor=cornsilk><td class=f8n width=100% colspan=2><br><ul>Quelqu'un a-t’il une idée? </ul><br></td></tr></table><br></td></tr><tr><td colspan=3><table width=100% cellpadding=0 cellspacing=1 border=0><tr><td colspan=2><table width=100% border bordercolor=black bgcolor=#a8d7fe><tr bgcolor=white><td width=50%><a name='282325'></a>Sujet : <b>Alim HT ALS 349</b></td><td width=50% class=f8nd> De adams &nbsp;&nbsp;Le 03-02-2019 à 15:31&nbsp;sta</td></tr></table></td></tr><tr bgcolor=cornsilk><td class=f8n width=100% colspan=2><br><ul>Bonjour <br />
+Fin octobre j'avais ressorti la mienne qui  fonctionne toujours , sans nouvelles de votre part  je l'ai remise en place .<br />
+<br />
+Si celle de Mr Terrier est accessible (son email est sur son site ), demandez lui s'il peut faire des mesures de tension .<br />
+<br />
+<img src="lienext.gif"><a class=aroug href="http://www.michelterrier.fr/radiocol/detail2012/alimentation_3000v_crc_als_349.htm" title="Lien : http://www.michelterrier.fr/radiocol/detail2012/alimentation_3000v_crc_als_349.htm" target="_blank">http://www.michelterrier.…</a><br />
+ </ul><br></td></tr></table><br></td></tr><tr><td colspan=3 align=right><table align=right border=1 cellpadding=0 cellspacing=0><tr><td><a href='forum.php'>&nbsp;<b>Retour aux sujets<b>&nbsp;</a></td></tr></table></td></tr></table><br><h5>Rubriques du site<a name='mnb'></a><div align=center><table border cellspacing=0 bordercolor='#213562' width='100%'><tr><td><p class=t10rc>Gamme&nbsp;1</td><td align=center> - <a href="../pg.php?p=1">Galerie TSF</a> - <a href="../pg.php?p=2">Mesure ancienne</a> - <a href="../pg.php?p=3">Littérature</a> - <a href="../pg.php?p=4">Trucs et astuces</a> - <a href="../pg.php?p=5">Marquage composants</a> - <a href="../pg.php?p=6">Tubes Brochages</a> - <a href="../pg.php?p=7">Achat Vente</a> - <a href="../pg.php?p=8">Forum</a> - <a href="../pg.php?p=9">Liens utiles</a></td><td rowspan="3" align=center>Ce site vous<br>a aidé ?<br><form action="https://www.paypal.com/cgi-bin/webscr" method="post"><input type="hidden" name="cmd" value="_s-xclick"><input type="hidden" name="hosted_button_id" value="FR6P8TQQDECQS"><input type="image" src="https://www.paypalobjects.com/fr_FR/FR/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - la solution de paiement en ligne la plus simple et la plus sécurisée !"><img alt="" border="0" src="https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif" width="1" height="1"></form></td></tr><tr><td><p class=t10rc>Gamme&nbsp;2</td><td align=center> - <a href="../pg.php?p=10">Je cherche</a> - <a href="../pg.php?p=11">Offre</a> - <a href="../pg.php?p=12">Tendances</a> - <a href="../pg.php?p=15">Palais des Glaces</a> - <a href="../pg.php?p=16">Upload</a> -</td></tr><tr><td><p class=t10rc>Gamme&nbsp;3</td><td align=center> - <a href="../pg.php?p=19">Archives</a> - <a href="../pg.php?p=20">Schématèque</a> - <a href="../pg.php?p=22">Glossaire technique</a> - <a href="../pg.php?p=23">Glossaire patoisant</a> - <a href="../pg.php?p=26">Journaux</a> - <a href="../pg.php?p=27">Remerciements</a> -</td></tr></table><img src='ims/logo-blanc.png'></div></h5></center>
+</body></html>

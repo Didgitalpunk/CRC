@@ -1,0 +1,75 @@
+﻿@media screen and (max-width: 980px) {
+#outerWrapper {
+	width: 95%;
+}
+#content {
+	width: 60%;
+	padding: 3% 4%;
+}
+#leftColumn1 {
+	width: 30%;
+}
+}
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (orientation : portrait) {
+#outerWrapper {
+	width: 95%;
+}
+#content {
+	width: 63%;
+	padding: 3% 4%;
+}
+#leftColumn1 {
+	width: 27%;
+}
+}
+@media screen and (max-width: 650px) {
+#header {
+	height: auto;
+}
+#topNavigation {
+	position: static;
+}
+#content {
+	width: auto;
+	float: none;
+	margin: 20px 0;
+}
+#leftColumn1 {
+	width: 100%;
+	float: none;
+	margin: 0;
+}
+}
+@media screen and (max-width: 480px) {
+html {
+	-webkit-text-size-adjust: none;
+}
+#contentWrapper {
+	clear: both;
+	background: #FFFFFF 
+	background-image: url('../images/mobile-bg.jpg'); repeat-y;
+}
+#header {
+	height: 100px;
+}
+#outerWrapper #topNavigation {
+	height: 50px;
+}
+#topNavigation a {
+	font-size: 90%;
+	padding: 10px 8px;
+}
+#leftColumn1 {
+	width: auto;
+	float: none;
+	margin: 0;
+	height: 100%;
+}
+form fieldset {
+	width: 240px;
+}
+}
+
