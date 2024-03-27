@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name "GB 513")(type Legacy)(uri "${KIPRJMOD}/GB 513.lib")(options "")(descr ""))
+  (lib (name GB-513-rescue)(type Legacy)(uri "${KIPRJMOD}/GB 513-rescue.lib")(options "")(descr ""))
+)
