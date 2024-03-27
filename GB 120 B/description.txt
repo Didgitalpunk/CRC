@@ -1,0 +1,15 @@
+GENERATEUR CRC BF-GB 120 B
+
+Fabrication 1959, usage armée Française, labo de maintenance de 1959 à 1968
+
+En état de marche
+
+Alim commutable 110 / 220 Volts
+
+Qualité de fabrication militaire pour ce très curieux appareil de précision (pour l'époque) capable de générer un signal BF puissant de 429 à 4020 Hz de 3 volts sous 50 ohms à 60 volts sous 600 ohms.
+
+Réglage au 1/100 de Hertz près grâce aux figures de Lissajous s'affichant sur le scope. Les courbes sont  générées par comparaison du signal BF avec un générateur interne à 6 kHz.
+
+Usage réel inconnu à la base aérienne militaire de Ambérieu-en-Bugey/Lagnieu.
+
+Générateur équipé de tubes Rimlock, Noval et miniature
